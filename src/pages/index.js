@@ -1,9 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from 'styled-components';
 import SEO from "../components/SEO"
 import Header from "../components/Header";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/normalize.css';
 
 class BlogIndex extends React.Component {
@@ -18,7 +17,7 @@ class BlogIndex extends React.Component {
         />
         <>
           <Header/>
-          <Posts>
+          <div>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug;
               return (
@@ -31,16 +30,12 @@ class BlogIndex extends React.Component {
                 </div>
               )
             })}
-          </Posts>
+          </div>
         </>
       </>
     )
   }
 }
-
-const Posts = styled.div`
-    padding: 44px;
-`;
 
 export default BlogIndex
 
