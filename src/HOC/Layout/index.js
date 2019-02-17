@@ -1,4 +1,5 @@
 import React from "react"
+import { Button } from 'reactstrap';
 
 import "bootstrap/dist/css/bootstrap.css"
 import Header from "../../components/Header";
@@ -9,6 +10,7 @@ class Layout extends React.Component {
     const { children } = this.props;
     return (
       <>
+        <Button color="danger">Danger!</Button>
         <Header/>
         <main>{children}</main>
         <Footer/>
