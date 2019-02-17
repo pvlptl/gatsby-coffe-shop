@@ -2,8 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/SEO"
 import Header from "../components/Header";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/normalize.css';
+import '../styles/global.scss';
 
 class BlogIndex extends React.Component {
   render() {
