@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import styled from 'styled-components';
 import SEO from "../components/SEO"
 import Header from "../components/Header";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/normalize.css';
 
 class BlogIndex extends React.Component {
