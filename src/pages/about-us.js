@@ -1,20 +1,20 @@
 import React from "react"
-
-import Layout from "../HOC/Layout"
 import SEO from "../components/SEO"
+import Header from "../components/Header";
 
 class AboutUsPage extends React.Component {
   render() {
     return (
-      <Layout location={this.props.location} title='About Us'>
+      <>
         <SEO
-          title="All posts"
+          title="About Us"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <div>
+        <>
+          <Header/>
           About us page
-        </div>
-      </Layout>
+        </>
+      </>
     )
   }
 }
